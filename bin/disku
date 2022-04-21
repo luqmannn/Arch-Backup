@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+df -h -t ext4 -t xfs | awk '{print $1, $3 "/" $2}' | column -t
